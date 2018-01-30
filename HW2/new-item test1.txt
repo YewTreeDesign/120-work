@@ -3,5 +3,11 @@ Hello world can you feel the sunshine?
 Name: Charlene Mundel
 Date: 1/29/2018
 
+••••••••••
+
 This is my first text document for one of Dr. Musick's Media Arts courses.
-I added a new line to this file in my text editor!!!
+I added a new line to this file in my text
+editor!!!
+
+Have a good day
+••••••••••
