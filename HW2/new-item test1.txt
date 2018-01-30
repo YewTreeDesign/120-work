@@ -11,3 +11,14 @@ editor!!!
 
 Have a good day
 ••••••••••
+
+# HW-2 READ ME document
+![example image of atom](atom-editor.png)
+
+-This is fun
+-What is going on
+
+```javascript
+var der;
+der= "I don't know how to code yet..."
+```
