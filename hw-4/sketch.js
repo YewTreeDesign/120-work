@@ -1,4 +1,4 @@
-var bubbles=[]
+var bubbles=[];
 var logolable;
 
 function setup(){
