@@ -13,11 +13,8 @@ function draw(){
 
 }
 function preload(){
-  logolable[1]=loadImage('assets/logolable1.png');
-  logolable[2]=loadImage('assets/logolable2.png');
-  logolable[3]=loadImage('assets/logolable3.png');
-  logolable[4]=loadImage('assets/logolable4.png');
-  logolable[5]=loadImage('assets/logolable5.png');
+  for(var1=0;i<3;1++){
+    logolable[i]=loadImage('images/logolable'+1+'.png')
 
 }
 function mousePressed(){
