@@ -16,7 +16,8 @@ let headWidth = 80;
 let headHeight = 40;
 
 function draw() {
-  
+    // erase every frame
+    background( 255, 185, 155 );
     // turn the cursor off
     noCursor();
 
