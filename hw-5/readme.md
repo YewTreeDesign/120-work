@@ -1,6 +1,6 @@
 Charlene Mundel, 22
 
-[Live Sketch Link](https://yewtreedesign.github.io/120-work/HW-5/)
+[Live Sketch Link](https://yewtreedesign.github.io/120-work/hw-5/)
 
 
 # HW-5 -- Animation & Variables
