@@ -25,5 +25,8 @@ function draw() {
   var pix = img.get(x, y);
   fill(pix, 128);
   rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
 
 }
