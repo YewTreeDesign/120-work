@@ -9,8 +9,8 @@ function preload() {
 
 function setup() {
   createCanvas(636, 848);
-  smallPoint = 0.1;
-  largePoint = 10;
+  smallPoint = 0.5;
+  largePoint = 4;
   imageMode(CENTER);
   noStroke();
   background(0);
@@ -24,6 +24,15 @@ function draw() {
   var bx = ceil(map(mouseX, 0, 100, 0, 5));//pixles get smaller if you move it to the left
   var pix = img.get(x, y);
   fill(pix, 128);
+  rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
+  rect(x, y, pointillize, pointillize);
   rect(x, y, pointillize, pointillize);
   rect(x, y, pointillize, pointillize);
   rect(x, y, pointillize, pointillize);
