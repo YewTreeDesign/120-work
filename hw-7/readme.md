@@ -1,14 +1,13 @@
 Charlene Mundel, Sect. 50
 
-[Live Sketch Link]()
+[Live Sketch Link](https://yewtreedesign.github.io/120-work/hw-7/)
 
 
 # HW 7 | Describe then Alter the Bouncing Ball
 
 ## Description of What the Original Code is Doing
 
-<!--
---This is a Comment Block--
+
 
 1.Q: Please describe what the original code is doing.
 
@@ -72,7 +71,7 @@ canvas, but instead it's by the click of a mouse.
 
 ## How did you alter the sketch?
 
-<!--
+
 5. Q:Please describe how and why you changed the sketch?
 
 A: I randomnized my desired color and i removed the stroke for the circle. I also changed
