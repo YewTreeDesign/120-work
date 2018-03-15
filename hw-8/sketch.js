@@ -14,18 +14,25 @@
 // http://www.myphysicslab.com/pendulum1.html
 let p;
 var bg;
+var yew1;
+var yew2;
 
+function preload(){
+  yew1=loadImage('assets/yew1.png');
+  yew2=loadImage('assets/yew2.png');
+
+}
 
 function setup() {
-  bg = loadImage("assets/rain.png");
-  createCanvas(1000, 800);
+
+  createCanvas(800, 600);
   // Make a new Pendulum with an origin position and armlength
   p = new Pendulum(createVector(width / 2, 0), 300);
 
 }
 
 function draw() {
-  background(bg);
+  background(255, 153, 102);
   p.go();
 }
 

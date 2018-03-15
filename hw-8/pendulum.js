@@ -6,14 +6,28 @@
 // This constructor could be improved to allow a greater variety of pendulums
 
 
+var yew;
+var yew1;
+var yew2;
+
+function preload(){
+
+yew=loadImage('assets/yew.png');
+yew1=loadImage('assets/yew1.png');
+yew2=loadImage('assets/yew2.png');
+}
+
+
 class Pendulum {
+
+
 
   constructor(origin_, r_) {
     // Fill all variables
     this.origin = origin_.copy();
     this.position = createVector();
     this.r = r_;
-    this.angle = PI / 4;
+    this.angle = PI / 5;
 
     this.aVelocity = 0.0;
     this.aAcceleration = 0.0;
@@ -46,15 +60,14 @@ class Pendulum {
     this.position.set(this.r * sin(this.angle), this.r * cos(this.angle), 0); // Polar to cartesian conversion
     this.position.add(this.origin); // Make sure the position is relative to the pendulum's origin
 
-    stroke(255);
+    stroke(0, 102, 102);
     strokeWeight(2);
     // Draw the arm
     line(this.origin.x, this.origin.y, this.position.x, this.position.y);
-    ellipseMode(CENTER);
-    fill(37, 183, 194);
-    if (this.dragging) fill(254, 150, 126);
+    imageMode(CENTER);
+    if (this.dragging) image(yew1);
     // Draw the ball
-    ellipse(this.position.x, this.position.y, this.ballr, this.ballr);
+    image(yew,this.position.x, this.position.y,);
   }
 
 
