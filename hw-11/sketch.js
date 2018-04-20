@@ -15,11 +15,7 @@ function preload() {
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
-
   for (let i = 0; i < 200; i++) {
-
-  for (let i = 0; i < 500; i++) {
-
     let x = random(width);
     let y = random(height);
     let r = random(0);
@@ -44,11 +40,6 @@ function draw() {
   for (let i = 0; i < bubbles.length; i++) {
     bubbles[i].move();
     bubbles[i].show();
-
-
-
-
-
   }
 }
 
