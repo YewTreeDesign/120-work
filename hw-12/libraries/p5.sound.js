@@ -2832,6 +2832,7 @@ fft = function () {
    *    var rectangle_width = (log(i+1)-log(i))*(width/log(spectrum.length));
    *    rect(x, height, rectangle_width, -h )
    *  }
+
    *  var nyquist = 22050;
    *
    *  // get the centroid
