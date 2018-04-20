@@ -1,9 +1,10 @@
 class Bubble {
-  constructor(x, y, r = 50) {
+  constructor(x, y, r = 50, img) {
     this.x = x;
     this.y = y;
     this.r = r;
     this.brightness = 0;
+    this.img= img;
   }
 
   intersects(other) {
@@ -35,9 +36,6 @@ class Bubble {
   }
 
   show() {
-    stroke(255);
-    strokeWeight(4);
-    fill(this.brightness, 125);
-    ellipse(this.x, this.y, this.r * 2);
+    ellipse(this.img, this.x, this.y, this.r * 2);
   }
 }
