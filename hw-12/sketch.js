@@ -1,6 +1,8 @@
 let bubble1;
 let bubble2;
 
+
+
 function setup() {
   createCanvas(600, 400);
   bubble1 = new Bubble(200, 200);
@@ -10,10 +12,8 @@ function setup() {
 function draw() {
   background(0);
 
-
-
   if (bubble1.intersects(bubble2)) {
-    background(200, 0, 100);
+    background(249, 173, 169);
   }
 
   bubble1.show();
@@ -26,21 +26,18 @@ function draw() {
 }
 
 class Bubble {
-  constructor(x, y, r = 50) {
+  constructor(x, y, r = 50, img) {
     this.x = x;
     this.y = y;
     this.r = r;
     this.brightness = 0;
+    this.img= img;
   }
 
   intersects(other) {
     let d = dist(this.x, this.y, other.x, other.y);
     return (d < this.r + other.r);
-    // if (d < this.r + other.r) {
-    //   return true;
-    // } else {
-    //   return false;
-    // }
+
   }
 
   changeColor(bright) {
