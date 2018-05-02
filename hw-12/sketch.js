@@ -1,67 +1,69 @@
-let bubble1;
-let bubble2;
+let seal;
+let boop;
 
+function preload(){
 
+seal = new Bubble loadImage('seals/seal.png');
+
+boop = new Bubble loadImage('seals/boop.png');
+
+}
 
 function setup() {
-  createCanvas(600, 400);
-  bubble1 = new Bubble(200, 200);
-  bubble2 = new Bubble(400, 200, 100);
+createCanvas(600, 400);
+
 }
 
 function draw() {
-  background(0);
+background(0);
 
-  if (bubble1.intersects(bubble2)) {
-    background(249, 173, 169);
-  }
+if (seal.intersects(boop)) {
+background(200, 247, 247);
+}
 
-  bubble1.show();
-  bubble2.show();
-  bubble1.move();
-  //bubble2.move();
-  bubble2.x = mouseX;
-  bubble2.y = mouseY;
+seal.show();
+boop.show();
+seal.move();
+boop.x = mouseX;
+boop.y = mouseY;
 
 }
 
 class Bubble {
-  constructor(x, y, r = 50, img) {
-    this.x = x;
-    this.y = y;
-    this.r = r;
-    this.brightness = 0;
-    this.img= img;
-  }
+constructor(x, y, r, img) {
+this.x = x;
+this.y = y;
+this.r = r;
+this.seal= img;
+}
 
-  intersects(other) {
-    let d = dist(this.x, this.y, other.x, other.y);
-    return (d < this.r + other.r);
+intersects(other) {
+  let d = dist(this.x, this.y, other.x, other.y);
+  let intersect = (d < this.r + other.r);
 
-  }
+  if (intersect) {
+    this.seal = boop;
+    return true;
+   } else {
+   return false;
+  *and reset it to regular seal*
+}
 
-  changeColor(bright) {
-    this.brightness = bright;
-  }
+contains(px, py) {
+let d = dist(px, py, this.x, this.y);
+if (d < this.r) {
+return true;
+} else {
+return false;
+}
+}
 
-  contains(px, py) {
-    let d = dist(px, py, this.x, this.y);
-    if (d < this.r) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+move() {
+this.x = this.x + random(-2, 2);
+this.y = this.y + random(-2, 2);
+}
 
-  move() {
-    this.x = this.x + random(-2, 2);
-    this.y = this.y + random(-2, 2);
-  }
-
-  show() {
-    stroke(255);
-    strokeWeight(4);
-    fill(this.brightness, 125);
-    ellipse(this.x, this.y, this.r * 2);
-  }
+show() {
+image(this.seal, this.x, this.y, this.r);
+}
 }

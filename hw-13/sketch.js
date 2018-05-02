@@ -12,11 +12,12 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1905, 800);
+  createCanvas(windowWidth, windowHeight);
   for (let i = 0; i < 1000; i++) {
-    let x = random(width);
+    let x = 25 + 218 * i;
     let y = random(height);
-    let r = random(50, 110);
+    let r = (117);
+
     // let kitten = random(seals);
     let b = new Bubble(x, y, r);
     bubbles.push(b);
@@ -35,6 +36,8 @@ function draw() {
   for (let i = 0; i < bubbles.length; i++) {
     bubbles[i].move();
     bubbles[i].show();
+
+
   }
 }
 
@@ -56,8 +59,12 @@ class Bubble {
   }
 
   move() {
-    this.x = this.x + random(-1, 1);
-    this.y = this.y + random(-1, 1);
+    this.x = this.x + random(-2, 1);
+    this.y = this.y - 3;
+
+    if (this.y < 0) {
+      this.y = height;
+    }
   }
 
   show() {
