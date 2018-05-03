@@ -1,6 +1,14 @@
 Charlene Mundel
 
-[Live Sketch Link] (https://yewtreedesign.github.io/120-work/hw-10/)
+POKE THE SEALS!
+THE GAME!
+
+IT KEEPS SCORE WHEN SEALS ARE CLICKED!!
+
+YES I DID THE THING!
+
+
+[Live Sketch Link] (https://yewtreedesign.github.io/120-work/hw-13/)
 
 If you poke the seals they'll get grumpy.
 
